@@ -1,0 +1,12 @@
+{
+  "name": "slow-export",
+  "steps": [
+    {
+      "id": "export-report",
+      "type": "task",
+      "timeoutMs": 1000,
+      "retry": { "maxAttempts": 2 },
+      "simulate": { "workMs": 3000 }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "card-declined",
+  "steps": [
+    { "id": "validate-order", "type": "task" },
+    { "id": "charge-card", "type": "task", "dependsOn": ["validate-order"], "simulate": { "failPermanently": true } },
+    { "id": "ship", "type": "task", "dependsOn": ["charge-card"] },
+    { "id": "send-invoice", "type": "task", "dependsOn": ["ship"] },
+    { "id": "write-audit-log", "type": "task", "dependsOn": ["validate-order"] }
+  ]
+}

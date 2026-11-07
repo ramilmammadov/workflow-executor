@@ -1,0 +1,40 @@
+name: workflow-executor
+
+services:
+  temporal:
+    image: temporalio/temporal:1.9.1
+    restart: unless-stopped
+    command: ["server", "start-dev", "--ip", "0.0.0.0", "--db-filename", "/home/temporal/temporal.db"]
+    ports:
+      - "${TEMPORAL_PORT:-7233}:7233" # Temporal frontend (gRPC)
+      - "${TEMPORAL_UI_PORT:-8233}:8233" # Temporal Web UI
+    volumes:
+      - temporal-data:/home/temporal
+    healthcheck:
+      test: ["CMD", "temporal", "operator", "cluster", "health", "--address", "127.0.0.1:7233"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 5s
+
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      TEMPORAL_TARGET: temporal:7233
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    depends_on:
+      temporal:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--output", "/dev/null", "http://localhost:8080/actuator/health/readiness"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+      start_period: 10s
+    # Leaves time for in-flight requests and activity attempts to finish before the container is killed.
+    stop_grace_period: 30s
+
+volumes:
+  temporal-data:

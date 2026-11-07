@@ -1,0 +1,10 @@
+{
+  "name": "order-fulfilment",
+  "steps": [
+    { "id": "validate-order", "type": "task" },
+    { "id": "charge-card", "type": "task", "dependsOn": ["validate-order"], "simulate": { "workMs": 800 } },
+    { "id": "reserve-stock", "type": "task", "dependsOn": ["validate-order"], "simulate": { "workMs": 500 } },
+    { "id": "fraud-hold", "type": "delay", "dependsOn": ["charge-card"], "delayMs": 3000 },
+    { "id": "ship", "type": "task", "dependsOn": ["fraud-hold", "reserve-stock"] }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "flaky-payment-provider",
+  "steps": [
+    { "id": "validate-order", "type": "task" },
+    {
+      "id": "charge-card",
+      "type": "task",
+      "dependsOn": ["validate-order"],
+      "retry": { "maxAttempts": 4 },
+      "simulate": { "failFirstAttempts": 2 }
+    },
+    { "id": "ship", "type": "task", "dependsOn": ["charge-card"] }
+  ]
+}

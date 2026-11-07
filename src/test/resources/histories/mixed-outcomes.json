@@ -1,0 +1,634 @@
+{
+  "events": [
+    {
+      "eventId": "1",
+      "eventTime": "2026-11-06T20:59:32.950Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_EXECUTION_STARTED",
+      "workflowExecutionStartedEventAttributes": {
+        "workflowType": {
+          "name": "DagWorkflow"
+        },
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "input": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJuYW1lIjpudWxsLCJzdGVwcyI6W3siaWQiOiJhIiwidHlwZSI6InRhc2siLCJkZXBlbmRzT24iOltdLCJ0YXNrIjp7InRpbWVvdXRNcyI6NTAwMCwicmV0cnkiOnsibWF4QXR0ZW1wdHMiOjMsImluaXRpYWxJbnRlcnZhbE1zIjo1MCwiYmFja29mZkNvZWZmaWNpZW50IjoyLjAsIm1heEludGVydmFsTXMiOjIwMH0sInNpbXVsYXRpb24iOnsid29ya01zIjowLCJmYWlsRmlyc3RBdHRlbXB0cyI6MCwiZmFpbFBlcm1hbmVudGx5IjpmYWxzZX19LCJkZWxheU1zIjowfSx7ImlkIjoiYiIsInR5cGUiOiJ0YXNrIiwiZGVwZW5kc09uIjpbImEiXSwidGFzayI6eyJ0aW1lb3V0TXMiOjUwMDAsInJldHJ5Ijp7Im1heEF0dGVtcHRzIjozLCJpbml0aWFsSW50ZXJ2YWxNcyI6NTAsImJhY2tvZmZDb2VmZmljaWVudCI6Mi4wLCJtYXhJbnRlcnZhbE1zIjoyMDB9LCJzaW11bGF0aW9uIjp7IndvcmtNcyI6MCwiZmFpbEZpcnN0QXR0ZW1wdHMiOjEsImZhaWxQZXJtYW5lbnRseSI6ZmFsc2V9fSwiZGVsYXlNcyI6MH0seyJpZCI6ImMiLCJ0eXBlIjoidGFzayIsImRlcGVuZHNPbiI6WyJhIl0sInRhc2siOnsidGltZW91dE1zIjo1MDAwLCJyZXRyeSI6eyJtYXhBdHRlbXB0cyI6MywiaW5pdGlhbEludGVydmFsTXMiOjUwLCJiYWNrb2ZmQ29lZmZpY2llbnQiOjIuMCwibWF4SW50ZXJ2YWxNcyI6MjAwfSwic2ltdWxhdGlvbiI6eyJ3b3JrTXMiOjEwMCwiZmFpbEZpcnN0QXR0ZW1wdHMiOjAsImZhaWxQZXJtYW5lbnRseSI6ZmFsc2V9fSwiZGVsYXlNcyI6MH0seyJpZCI6ImQiLCJ0eXBlIjoiZGVsYXkiLCJkZXBlbmRzT24iOlsiYiIsImMiXSwidGFzayI6bnVsbCwiZGVsYXlNcyI6MTAwMH0seyJpZCI6ImUiLCJ0eXBlIjoidGFzayIsImRlcGVuZHNPbiI6W10sInRhc2siOnsidGltZW91dE1zIjo1MDAwLCJyZXRyeSI6eyJtYXhBdHRlbXB0cyI6MywiaW5pdGlhbEludGVydmFsTXMiOjUwLCJiYWNrb2ZmQ29lZmZpY2llbnQiOjIuMCwibWF4SW50ZXJ2YWxNcyI6MjAwfSwic2ltdWxhdGlvbiI6eyJ3b3JrTXMiOjAsImZhaWxGaXJzdEF0dGVtcHRzIjowLCJmYWlsUGVybWFuZW50bHkiOnRydWV9fSwiZGVsYXlNcyI6MH0seyJpZCI6ImYiLCJ0eXBlIjoidGFzayIsImRlcGVuZHNPbiI6WyJlIl0sInRhc2siOnsidGltZW91dE1zIjo1MDAwLCJyZXRyeSI6eyJtYXhBdHRlbXB0cyI6MywiaW5pdGlhbEludGVydmFsTXMiOjUwLCJiYWNrb2ZmQ29lZmZpY2llbnQiOjIuMCwibWF4SW50ZXJ2YWxNcyI6MjAwfSwic2ltdWxhdGlvbiI6eyJ3b3JrTXMiOjAsImZhaWxGaXJzdEF0dGVtcHRzIjowLCJmYWlsUGVybWFuZW50bHkiOmZhbHNlfX0sImRlbGF5TXMiOjB9XX0\u003d"
+            }
+          ]
+        },
+        "workflowExecutionTimeout": "315360000s",
+        "workflowRunTimeout": "315360000s",
+        "workflowTaskTimeout": "10s",
+        "originalExecutionRunId": "2a1d0fae-3d60-4dba-86e0-c0f97fbb6c39",
+        "identity": "58131@LTE3017",
+        "firstExecutionRunId": "2a1d0fae-3d60-4dba-86e0-c0f97fbb6c39",
+        "attempt": 1,
+        "firstWorkflowTaskBackoff": "0s",
+        "header": {}
+      }
+    },
+    {
+      "eventId": "2",
+      "eventTime": "2026-11-06T20:59:32.950Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "3",
+      "eventTime": "2026-11-06T20:59:32.961Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "2",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "1596"
+      }
+    },
+    {
+      "eventId": "4",
+      "eventTime": "2026-11-06T20:59:33.123Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "2",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "langUsedFlags": [
+            1,
+            3
+          ],
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "5",
+      "eventTime": "2026-11-06T20:59:33.123Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_SCHEDULED",
+      "activityTaskScheduledEventAttributes": {
+        "activityId": "c1193eb8-20c3-3fa8-b636-bbb7044521d9",
+        "activityType": {
+          "name": "RunTask"
+        },
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "header": {},
+        "input": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJzdGVwSWQiOiJhIiwiaWRlbXBvdGVuY3lLZXkiOiJmaXh0dXJlLW1peGVkLW91dGNvbWVzOmEiLCJzaW11bGF0aW9uIjp7IndvcmtNcyI6MCwiZmFpbEZpcnN0QXR0ZW1wdHMiOjAsImZhaWxQZXJtYW5lbnRseSI6ZmFsc2V9fQ\u003d\u003d"
+            }
+          ]
+        },
+        "scheduleToCloseTimeout": "315360000s",
+        "scheduleToStartTimeout": "315360000s",
+        "startToCloseTimeout": "5s",
+        "heartbeatTimeout": "5s",
+        "workflowTaskCompletedEventId": "3",
+        "retryPolicy": {
+          "initialInterval": "0.050s",
+          "backoffCoefficient": 2.0,
+          "maximumInterval": "0.200s",
+          "maximumAttempts": 3
+        }
+      },
+      "userMetadata": {
+        "summary": {
+          "metadata": {
+            "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+          },
+          "data": "ImEi"
+        }
+      }
+    },
+    {
+      "eventId": "6",
+      "eventTime": "2026-11-06T20:59:33.123Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_SCHEDULED",
+      "activityTaskScheduledEventAttributes": {
+        "activityId": "4a6ef37e-448d-3ee0-acba-c027e4f1884b",
+        "activityType": {
+          "name": "RunTask"
+        },
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "header": {},
+        "input": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJzdGVwSWQiOiJlIiwiaWRlbXBvdGVuY3lLZXkiOiJmaXh0dXJlLW1peGVkLW91dGNvbWVzOmUiLCJzaW11bGF0aW9uIjp7IndvcmtNcyI6MCwiZmFpbEZpcnN0QXR0ZW1wdHMiOjAsImZhaWxQZXJtYW5lbnRseSI6dHJ1ZX19"
+            }
+          ]
+        },
+        "scheduleToCloseTimeout": "315360000s",
+        "scheduleToStartTimeout": "315360000s",
+        "startToCloseTimeout": "5s",
+        "heartbeatTimeout": "5s",
+        "workflowTaskCompletedEventId": "3",
+        "retryPolicy": {
+          "initialInterval": "0.050s",
+          "backoffCoefficient": 2.0,
+          "maximumInterval": "0.200s",
+          "maximumAttempts": 3
+        }
+      },
+      "userMetadata": {
+        "summary": {
+          "metadata": {
+            "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+          },
+          "data": "ImUi"
+        }
+      }
+    },
+    {
+      "eventId": "7",
+      "eventTime": "2026-11-06T20:59:33.125Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_STARTED",
+      "activityTaskStartedEventAttributes": {
+        "scheduledEventId": "5",
+        "identity": "58131@LTE3017",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "8",
+      "eventTime": "2026-11-06T20:59:33.132Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_COMPLETED",
+      "activityTaskCompletedEventAttributes": {
+        "result": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJhdHRlbXB0IjoxfQ\u003d\u003d"
+            }
+          ]
+        },
+        "scheduledEventId": "5",
+        "startedEventId": "7",
+        "identity": "58131@LTE3017"
+      }
+    },
+    {
+      "eventId": "9",
+      "eventTime": "2026-11-06T20:59:33.132Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "10",
+      "eventTime": "2026-11-06T20:59:33.132Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "9",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "2568"
+      }
+    },
+    {
+      "eventId": "11",
+      "eventTime": "2026-11-06T20:59:33.136Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "9",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "12",
+      "eventTime": "2026-11-06T20:59:33.136Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_SCHEDULED",
+      "activityTaskScheduledEventAttributes": {
+        "activityId": "b637bb3e-e4fe-3f32-8f6e-858d21a047fc",
+        "activityType": {
+          "name": "RunTask"
+        },
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "header": {},
+        "input": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJzdGVwSWQiOiJiIiwiaWRlbXBvdGVuY3lLZXkiOiJmaXh0dXJlLW1peGVkLW91dGNvbWVzOmIiLCJzaW11bGF0aW9uIjp7IndvcmtNcyI6MCwiZmFpbEZpcnN0QXR0ZW1wdHMiOjEsImZhaWxQZXJtYW5lbnRseSI6ZmFsc2V9fQ\u003d\u003d"
+            }
+          ]
+        },
+        "scheduleToCloseTimeout": "315360000s",
+        "scheduleToStartTimeout": "315360000s",
+        "startToCloseTimeout": "5s",
+        "heartbeatTimeout": "5s",
+        "workflowTaskCompletedEventId": "10",
+        "retryPolicy": {
+          "initialInterval": "0.050s",
+          "backoffCoefficient": 2.0,
+          "maximumInterval": "0.200s",
+          "maximumAttempts": 3
+        }
+      },
+      "userMetadata": {
+        "summary": {
+          "metadata": {
+            "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+          },
+          "data": "ImIi"
+        }
+      }
+    },
+    {
+      "eventId": "13",
+      "eventTime": "2026-11-06T20:59:33.136Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_SCHEDULED",
+      "activityTaskScheduledEventAttributes": {
+        "activityId": "2ab59c77-97cb-39d7-91a2-025d40f55f99",
+        "activityType": {
+          "name": "RunTask"
+        },
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "header": {},
+        "input": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJzdGVwSWQiOiJjIiwiaWRlbXBvdGVuY3lLZXkiOiJmaXh0dXJlLW1peGVkLW91dGNvbWVzOmMiLCJzaW11bGF0aW9uIjp7IndvcmtNcyI6MTAwLCJmYWlsRmlyc3RBdHRlbXB0cyI6MCwiZmFpbFBlcm1hbmVudGx5IjpmYWxzZX19"
+            }
+          ]
+        },
+        "scheduleToCloseTimeout": "315360000s",
+        "scheduleToStartTimeout": "315360000s",
+        "startToCloseTimeout": "5s",
+        "heartbeatTimeout": "5s",
+        "workflowTaskCompletedEventId": "10",
+        "retryPolicy": {
+          "initialInterval": "0.050s",
+          "backoffCoefficient": 2.0,
+          "maximumInterval": "0.200s",
+          "maximumAttempts": 3
+        }
+      },
+      "userMetadata": {
+        "summary": {
+          "metadata": {
+            "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+          },
+          "data": "ImMi"
+        }
+      }
+    },
+    {
+      "eventId": "14",
+      "eventTime": "2026-11-06T20:59:33.124Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_STARTED",
+      "activityTaskStartedEventAttributes": {
+        "scheduledEventId": "6",
+        "identity": "58131@LTE3017",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "15",
+      "eventTime": "2026-11-06T20:59:33.136Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_FAILED",
+      "activityTaskFailedEventAttributes": {
+        "failure": {
+          "message": "Simulated permanent failure",
+          "source": "JavaSDK",
+          "stackTrace": "io.temporal.failure.ApplicationFailure.newNonRetryableFailureWithCause(ApplicationFailure.java:161)\nio.temporal.failure.ApplicationFailure.newNonRetryableFailure(ApplicationFailure.java:142)\nio.workflowexecutor.execution.SimulatedTaskActivities.failIfSimulated(SimulatedTaskActivities.java:63)\nio.workflowexecutor.execution.SimulatedTaskActivities.runTask(SimulatedTaskActivities.java:33)\njava.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\njava.base/java.lang.reflect.Method.invoke(Method.java:565)\nio.temporal.internal.activity.RootActivityInboundCallsInterceptor$POJOActivityInboundCallsInterceptor.executeActivity(RootActivityInboundCallsInterceptor.java:44)\nio.temporal.internal.activity.RootActivityInboundCallsInterceptor.execute(RootActivityInboundCallsInterceptor.java:23)\nio.temporal.internal.activity.ActivityTaskExecutors$BaseActivityTaskExecutor.execute(ActivityTaskExecutors.java:88)\nio.temporal.internal.activity.ActivityTaskHandlerImpl.handle(ActivityTaskHandlerImpl.java:109)\nio.temporal.internal.worker.ActivityWorker$TaskHandlerImpl.handleActivity(ActivityWorker.java:393)\nio.temporal.internal.worker.ActivityWorker$TaskHandlerImpl.handle(ActivityWorker.java:334)\nio.temporal.internal.worker.ActivityWorker$TaskHandlerImpl.handle(ActivityWorker.java:296)\nio.temporal.internal.worker.PollTaskExecutor.lambda$process$1(PollTaskExecutor.java:80)\njava.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)\njava.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)\njava.base/java.lang.Thread.run(Thread.java:1474)\n",
+          "applicationFailureInfo": {
+            "type": "SimulatedPermanentFailure",
+            "nonRetryable": true,
+            "details": {
+              "payloads": [
+                {
+                  "metadata": {
+                    "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+                  },
+                  "data": "MQ\u003d\u003d"
+                }
+              ]
+            }
+          }
+        },
+        "scheduledEventId": "6",
+        "startedEventId": "11",
+        "identity": "58131@LTE3017",
+        "retryState": "RETRY_STATE_NON_RETRYABLE_FAILURE"
+      }
+    },
+    {
+      "eventId": "16",
+      "eventTime": "2026-11-06T20:59:33.136Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 2
+      }
+    },
+    {
+      "eventId": "17",
+      "eventTime": "2026-11-06T20:59:33.137Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "16",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "5245"
+      }
+    },
+    {
+      "eventId": "18",
+      "eventTime": "2026-11-06T20:59:33.141Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "16",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "19",
+      "eventTime": "2026-11-06T20:59:33.141Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "20",
+      "eventTime": "2026-11-06T20:59:33.141Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "19",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "5398"
+      }
+    },
+    {
+      "eventId": "21",
+      "eventTime": "2026-11-06T20:59:33.141Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "19",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "22",
+      "eventTime": "2026-11-06T20:59:33.191Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_STARTED",
+      "activityTaskStartedEventAttributes": {
+        "scheduledEventId": "12",
+        "identity": "58131@LTE3017",
+        "attempt": 2
+      }
+    },
+    {
+      "eventId": "23",
+      "eventTime": "2026-11-06T20:59:33.192Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_COMPLETED",
+      "activityTaskCompletedEventAttributes": {
+        "result": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJhdHRlbXB0IjoyfQ\u003d\u003d"
+            }
+          ]
+        },
+        "scheduledEventId": "12",
+        "startedEventId": "22",
+        "identity": "58131@LTE3017"
+      }
+    },
+    {
+      "eventId": "24",
+      "eventTime": "2026-11-06T20:59:33.192Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "25",
+      "eventTime": "2026-11-06T20:59:33.192Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "24",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "5672"
+      }
+    },
+    {
+      "eventId": "26",
+      "eventTime": "2026-11-06T20:59:33.193Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "24",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "27",
+      "eventTime": "2026-11-06T20:59:33.137Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_STARTED",
+      "activityTaskStartedEventAttributes": {
+        "scheduledEventId": "13",
+        "identity": "58131@LTE3017",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "28",
+      "eventTime": "2026-11-06T20:59:33.240Z",
+      "eventType": "EVENT_TYPE_ACTIVITY_TASK_COMPLETED",
+      "activityTaskCompletedEventAttributes": {
+        "result": {
+          "payloads": [
+            {
+              "metadata": {
+                "encoding": "anNvbi9wbGFpbg\u003d\u003d"
+              },
+              "data": "eyJhdHRlbXB0IjoxfQ\u003d\u003d"
+            }
+          ]
+        },
+        "scheduledEventId": "13",
+        "startedEventId": "27",
+        "identity": "58131@LTE3017"
+      }
+    },
+    {
+      "eventId": "29",
+      "eventTime": "2026-11-06T20:59:33.240Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "30",
+      "eventTime": "2026-11-06T20:59:33.240Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "29",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "5946"
+      }
+    },
+    {
+      "eventId": "31",
+      "eventTime": "2026-11-06T20:59:33.244Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "29",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "32",
+      "eventTime": "2026-11-06T20:59:33.244Z",
+      "eventType": "EVENT_TYPE_TIMER_STARTED",
+      "timerStartedEventAttributes": {
+        "timerId": "68aa89a2-c579-32b3-89fe-197725a1fda8",
+        "startToFireTimeout": "1s",
+        "workflowTaskCompletedEventId": "30"
+      }
+    },
+    {
+      "eventId": "33",
+      "eventTime": "2026-11-06T20:59:34.245Z",
+      "eventType": "EVENT_TYPE_TIMER_FIRED",
+      "timerFiredEventAttributes": {
+        "timerId": "68aa89a2-c579-32b3-89fe-197725a1fda8",
+        "startedEventId": "32"
+      }
+    },
+    {
+      "eventId": "34",
+      "eventTime": "2026-11-06T20:59:34.245Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_SCHEDULED",
+      "workflowTaskScheduledEventAttributes": {
+        "taskQueue": {
+          "name": "workflow-executor-test"
+        },
+        "startToCloseTimeout": "10s",
+        "attempt": 1
+      }
+    },
+    {
+      "eventId": "35",
+      "eventTime": "2026-11-06T20:59:34.245Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_STARTED",
+      "workflowTaskStartedEventAttributes": {
+        "scheduledEventId": "34",
+        "identity": "58131@LTE3017",
+        "historySizeBytes": "6223"
+      }
+    },
+    {
+      "eventId": "36",
+      "eventTime": "2026-11-06T20:59:34.248Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_TASK_COMPLETED",
+      "workflowTaskCompletedEventAttributes": {
+        "scheduledEventId": "34",
+        "identity": "58131@LTE3017",
+        "sdkMetadata": {
+          "sdkName": "temporal-java",
+          "sdkVersion": "1.40.0"
+        },
+        "meteringMetadata": {}
+      }
+    },
+    {
+      "eventId": "37",
+      "eventTime": "2026-11-06T20:59:34.248Z",
+      "eventType": "EVENT_TYPE_WORKFLOW_EXECUTION_FAILED",
+      "workflowExecutionFailedEventAttributes": {
+        "failure": {
+          "message": "Failed steps: e",
+          "source": "JavaSDK",
+          "stackTrace": "io.temporal.failure.ApplicationFailure.newNonRetryableFailureWithCause(ApplicationFailure.java:161)\nio.temporal.failure.ApplicationFailure.newNonRetryableFailure(ApplicationFailure.java:142)\nio.workflowexecutor.execution.DagWorkflowImpl.failIfAnyStepFailed(DagWorkflowImpl.java:207)\nio.workflowexecutor.execution.DagWorkflowImpl.execute(DagWorkflowImpl.java:55)\njava.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\njava.base/java.lang.reflect.Method.invoke(Method.java:565)\nio.temporal.internal.sync.POJOWorkflowImplementationFactory$POJOWorkflowImplementation$RootWorkflowInboundCallsInterceptor.execute(POJOWorkflowImplementationFactory.java:413)\nio.temporal.internal.sync.POJOWorkflowImplementationFactory$POJOWorkflowImplementation.execute(POJOWorkflowImplementationFactory.java:361)\n",
+          "applicationFailureInfo": {
+            "type": "StepsFailed",
+            "nonRetryable": true
+          }
+        },
+        "workflowTaskCompletedEventId": "35"
+      }
+    }
+  ]
+}

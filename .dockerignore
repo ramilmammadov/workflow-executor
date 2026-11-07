@@ -1,0 +1,12 @@
+.git/
+.github/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+target/
+docs/
+examples/
+compose.yaml
+Dockerfile
+*.md

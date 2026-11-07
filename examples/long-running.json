@@ -1,0 +1,7 @@
+{
+  "name": "nightly-batch",
+  "steps": [
+    { "id": "wait-for-window", "type": "delay", "delayMs": 600000 },
+    { "id": "run-batch", "type": "task", "dependsOn": ["wait-for-window"] }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "steps": [
+    { "id": "a", "type": "task", "dependsOn": ["c"] },
+    { "id": "b", "type": "task", "dependsOn": ["a", "missing"] },
+    { "id": "c", "type": "task", "dependsOn": ["b"] },
+    { "id": "d", "type": "email" }
+  ]
+}

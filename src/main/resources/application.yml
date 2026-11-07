@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: workflow-executor
+  jackson:
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-unknown-properties: true
+
+server:
+  shutdown: graceful
+
+workflow-executor:
+  temporal:
+    target: ${TEMPORAL_TARGET:localhost:7233}
+    namespace: ${TEMPORAL_NAMESPACE:default}
+    task-queue: ${TEMPORAL_TASK_QUEUE:workflow-executor}
+    worker-enabled: ${TEMPORAL_WORKER_ENABLED:true}
+    execution-timeout: 24h
+    api-call-timeout: 5s
+    query-timeout: 5s
+  step-defaults:
+    max-attempts: 3
+    attempt-timeout: 30s
+    initial-retry-interval: 1s
+    backoff-coefficient: 2.0
+    max-retry-interval: 30s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-components: always
+      group:
+        readiness:
+          include: readinessState,temporal
+
+logging:
+  pattern:
+    correlation: "[req=%X{requestId:--} run=%X{WorkflowId:--} step=%X{stepId:--}] "
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
