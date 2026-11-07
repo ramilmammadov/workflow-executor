@@ -30,17 +30,18 @@ More detail lives in [docs/design.md](docs/design.md) (architecture, state machi
 
 ## Quick start
 
-You need Docker with Compose v2. Nothing else: the image build compiles the code.
+To run the service you need only Docker with Compose v2: the image build compiles the code.
 
 ```bash
 docker compose up --build
 ```
 
-The first build downloads Maven dependencies and takes a minute or two. When both containers report healthy:
+The first build downloads the base images and the Maven dependencies, so it can take several minutes on a slow
+connection; later builds reuse them. When both containers report healthy:
 
 | What | Where |
 |---|---|
-| API | http://localhost:8080/api/v1/workflow-runs |
+| API: `POST` a definition here, see [Try it](#try-it) | `http://localhost:8080/api/v1/workflow-runs` |
 | Swagger UI | http://localhost:8080/swagger-ui.html |
 | OpenAPI document | http://localhost:8080/v3/api-docs |
 | Temporal Web UI (every run, its history and its activities) | http://localhost:8233 |
@@ -57,7 +58,7 @@ If a port is taken, override it: `APP_PORT=8081 TEMPORAL_PORT=7234 TEMPORAL_UI_P
 ## Try it
 
 The [examples](examples) folder holds one definition per scenario. Run the commands from the repository root.
-Pipe any response into `jq` to pretty-print it.
+They use `curl`, and step 6 also uses `jq`; pipe any response into `jq` to pretty-print it.
 
 **1. Submit a run.** Steps `charge-card` and `reserve-stock` both depend only on `validate-order`, so they run in
 parallel. `fraud-hold` is a delay step: it waits three seconds on a durable timer.
